@@ -17,7 +17,7 @@ public class AccountController {
     AccountRepo repo;
     @GetMapping("/account")
     Iterable<Account> getAll() {
-        repo.save(new Account(1L, "admin@admin.com", "admin", "Администратор", true, new ArrayList<>(), new ArrayList<>(), new ArrayList<>(), new ArrayList<>(), new ArrayList<>(), new HashSet<>(Arrays.asList(Role.ADMIN, Role.USER, Role.EDITOR))));
+        //repo.save(new Account(1L, "admin@admin.com", "admin", "Администратор", true, new ArrayList<>(), new ArrayList<>(), new ArrayList<>(), new ArrayList<>(), new ArrayList<>(), new HashSet<>(Arrays.asList(Role.ADMIN, Role.USER, Role.EDITOR))));
         return repo.findAll();
     }
 
